@@ -23,7 +23,7 @@
         - Verify Images were pushed to Registry:
             - ibmcloud cr image-list
 
-## Citations
+## Sources
 
     - https://docs.docker.com/language/golang/build-images/#multi-stage-builds
     - https://golang.org/doc/tutorial/web-service-gin

@@ -5,7 +5,7 @@
         - You have Docker installed: https://docs.docker.com/get-docker/
         - You have IBMCloud CLI installed: https://cloud.ibm.com/docs/cli?topic=cli-getting-started
 
-## Important Commands:
+## Important Commands
 
     - Run Locally without Docker: 
         - go run main.go
@@ -22,7 +22,7 @@
         - Verify Images were pushed to Registry:
             - ibmcloud cr image-list
 
-## Citations:
+## Citations
 
     - https://docs.docker.com/language/golang/build-images/#multi-stage-builds
     - https://golang.org/doc/tutorial/web-service-gin

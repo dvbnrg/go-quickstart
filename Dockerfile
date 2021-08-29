@@ -7,7 +7,7 @@ RUN go mod download
 RUN go build -o app
 
 # Deploy
-FROM gcr.io/distroless/base-debian10 AS deploy
+FROM gcr.io/distroless/base AS deploy
 WORKDIR /
 COPY --from=build /app .
 EXPOSE 80

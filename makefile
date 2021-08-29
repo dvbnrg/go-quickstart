@@ -4,6 +4,7 @@ dockerdev: build run
 
 commit:
 	gitui
+	git push
 
 build:
 	docker build --tag go-quickstart .

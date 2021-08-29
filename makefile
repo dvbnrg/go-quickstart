@@ -19,9 +19,10 @@ push: build
 sure:
 	docker images
 	go build .
+	rm go-quickstart
 	# go run main.go
 	ibmcloud cr image-list
 
 clean:
 	docker system prune -af
-	rm go-quickstart
+	

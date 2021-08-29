@@ -11,7 +11,7 @@ build:
 run:
 	docker run -p 80:80 -it go-quickstart
 
-push:
+push: build
 	docker tag go-quickstart icr.io/test-go/go-quickstart
 	ibmcloud cr login
 	docker push icr.io/test-go/go-quickstart

@@ -8,9 +8,14 @@ run:
 
 push:
 	docker tag go-quickstart icr.io/test-go/go-quickstart
+	ibmcloud cr login
 	docker push icr.io/test-go/go-quickstart
 
 sure:
 	go build .
 	# go run main.go
 	ibmcloud cr image-list
+
+clean:
+	docker system prune -af
+	rm go-quickstart

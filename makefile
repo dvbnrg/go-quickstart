@@ -19,8 +19,6 @@ push: build
 
 sure:
 	docker images
-	go build .
-	rm go-quickstart
 	# go run main.go
 	ibmcloud cr image-list
 

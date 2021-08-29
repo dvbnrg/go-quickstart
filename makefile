@@ -1,6 +1,6 @@
-.PHONY: dev
+.PHONY: dockerdev
 
-dev: build run
+dockerdev: build run
 
 build:
 	docker build --tag go-quickstart .

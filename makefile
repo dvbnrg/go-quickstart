@@ -2,6 +2,9 @@
 
 dockerdev: build run
 
+commit:
+	gitui
+
 build:
 	docker build --tag go-quickstart .
 

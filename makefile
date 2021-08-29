@@ -1,4 +1,6 @@
-.PHONY: build push
+.PHONY: dev
+
+dev: build run
 
 build:
 	docker build --tag go-quickstart .
@@ -12,6 +14,7 @@ push:
 	docker push icr.io/test-go/go-quickstart
 
 sure:
+	docker images
 	go build .
 	# go run main.go
 	ibmcloud cr image-list

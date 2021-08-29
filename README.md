@@ -4,6 +4,7 @@
         - You have Go installed: 'brew install go'
         - You have Docker installed: https://docs.docker.com/get-docker/
         - You have IBMCloud CLI installed: https://cloud.ibm.com/docs/cli?topic=cli-getting-started
+        - You have gitui installed: 'brew install gitui'
 
 ## Important Commands
 

@@ -1,0 +1,5 @@
+---
+applications:
+- name: daves-test-go-app
+  random-route: true
+  memory: 64M

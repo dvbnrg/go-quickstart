@@ -1,12 +1,12 @@
 .PHONY: build push
 
 build:
-	go build .
+	# go build .
 	docker build --tag go-quickstart .
-	docker run -p 80:80 -it go-quickstart
 
 run:
-	go run main.go
+	# go run main.go
+	docker run -p 80:80 -it go-quickstart
 
 push:
 	docker tag go-quickstart icr.io/test-go/go-quickstart

@@ -16,8 +16,13 @@
         - Log into ibmcloud container registry: 
             - ibmcloud cr login
         - Tag image:
-            - docker tag hello-world icr.io/<my_namespace>/<my_repository>:<my_tag>
+            - docker tag <my_repository> icr.io/<my_namespace>/<my_repository>:<my_tag>
         - Push to Registry:
             - docker push icr.io/<my_namespace>/<my_repository>:<my_tag>
         - Verify Images were pushed to Registry:
             - ibmcloud cr image-list
+
+## Citations:
+
+    - https://docs.docker.com/language/golang/build-images/#multi-stage-builds
+    - https://golang.org/doc/tutorial/web-service-gin

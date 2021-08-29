@@ -1,9 +1,9 @@
 # Go Gin Quickstart with IBM Cloud
 
     - This example assumes the following:
-        - Have Go installed: 'brew install go'
-        - Have Docker installed: https://docs.docker.com/get-docker/
-        - Have IBMCloud CLI installed: https://cloud.ibm.com/docs/cli?topic=cli-getting-started
+        - You have Go installed: 'brew install go'
+        - You have Docker installed: https://docs.docker.com/get-docker/
+        - You have IBMCloud CLI installed: https://cloud.ibm.com/docs/cli?topic=cli-getting-started
 
 ## Important Commands:
 
@@ -26,3 +26,5 @@
 
     - https://docs.docker.com/language/golang/build-images/#multi-stage-builds
     - https://golang.org/doc/tutorial/web-service-gin
+    - https://docs.docker.com/get-docker/
+    - https://cloud.ibm.com/docs/cli?topic=cli-getting-started

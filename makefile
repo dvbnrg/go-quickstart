@@ -1,6 +1,6 @@
 .PHONY: dockerdev
 
-dockerdev: build run
+dockerdev: build run test
 
 commit:
 	gitui
@@ -10,7 +10,10 @@ build:
 	docker build --tag go-quickstart .
 
 run:
-	docker run -p 80:80 -it go-quickstart
+	docker run -d -p 80:80 -it go-quickstart
+
+test:
+	curl localhost/ping
 
 push: build
 	docker tag go-quickstart icr.io/test-go/go-quickstart

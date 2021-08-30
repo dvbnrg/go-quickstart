@@ -16,6 +16,8 @@ test:
 	curl localhost/ping
 
 push: build
+	docker tag go-quickstart justdave/go-quickstart:v1
+	docker push justdave/go-quickstart:v1
 	docker tag go-quickstart icr.io/test-go/go-quickstart
 	ibmcloud cr login
 	docker push icr.io/test-go/go-quickstart
